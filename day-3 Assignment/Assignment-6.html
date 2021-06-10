@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>details</title>
+      <style>
+         p{
+            color: red;
+         }
+      </style>
+   </head>
+   <body>
+      <fieldset>
+         <legend>details</legend>
+         Name: <input type="text" id="uname" required/><br/><br/>
+         Adhaar Number: <input type="number" id="unum" /><br/><br/>
+         Address:<input type="text" id="uaddress"/><br/><br/>
+         <button onclick="readdata()">submit</button>
+      </fieldset><br/><br/>
+      <h1>result table</h1>
+      <table border='1'>
+         <tr>
+            <th>name</th>
+            <th>Adhaar Number</th>
+            <th>Address</th>
+         </tr>
+         <tr>
+            <td id="a">not yet read</td>
+            <td id="b">not yet read</td>
+            <td id="c">not yet read</td>
+         </tr>
+      <script>
+         function readdata(){
+            var a=document.getElementById('uname').value;
+            var b=document.getElementById('unum').value;
+            var c=document.getElementById('uaddress').value;
+
+            document.getElementById('a').innerHTML=a;
+            document.getElementById('b').innerHTML=b;
+            document.getElementById('c').innerHTML=c;
+         }
+      </script>
+   </body>
+</table>
+</body>
+</html>

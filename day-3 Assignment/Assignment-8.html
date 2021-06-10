@@ -1,0 +1,26 @@
+<!--Assignment - 8: Create an input that reads from the data list through the select tag and display the data in the paragraph tag of HTML-->
+<!DOCTYPE html>
+<html>
+<body>
+  <label>Choose your favoruite car</label>
+		<select id="cars">
+			<option>BMW</option>
+			<option>Mercedes-Benz</option>
+			<option>Volvo</option>
+			<option>Ferrari</option>
+			<option>Rolls Royce</option>
+			<option>Audi</option>
+			<option>Range Rover</option>
+		</select>
+		<button onclick="readData()">Submit</button>
+		<br>
+		you selected favourite car is
+		<p id="result"></p>
+		<script>
+			function readData() {
+				var a=document.getElementById('cars').value;
+				document.getElementById('result').innerHTML=a;
+			}
+		</script>
+</body>
+</html>
