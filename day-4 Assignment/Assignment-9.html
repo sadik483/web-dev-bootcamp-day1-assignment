@@ -1,0 +1,18 @@
+<!-- write your name on Canvas -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name on Canvas</title>
+  </head>
+  <body>
+    <canvas id="a" width="300" height="100" style="border:1px solid black">
+    </canvas>
+    <script>
+      var c=document.getElementById('a');
+      cursor=c.getContext('2d');
+      cursor.font="40px Arial";
+      cursor.fillText("Sadhik",10,50);
+      
+    </script>
+  </body>
+</html>

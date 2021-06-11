@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>gmail collector</title>
+</head>
+<body>
+	<h1>mail collector</h1>
+	<form action="/web-dev/dbms/action.php" method="POST" target="_blank">
+		<label style="color:red">Enter your email id: </label>
+			<input type="email" id="emailid" name="emailid" />
+			<br/><br/>
+			<button onclick="readData()">submit</button>
+	</form>
+		<script >
+			function readData(){
+				var email=document.getElementById('emailid').value;
+				var datastring='email'+email;
+				document.getElementById('result').innerHTML=datastring
+			}
+		</script>
+
+</body>
+</html>
