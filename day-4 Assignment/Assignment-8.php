@@ -15,7 +15,7 @@
 			$server="localhost:3306";
 			$username="root";
 			$password="";
-			$dbname="web-dev";
+			$dbname="mysql";
 
 			$conn=mysqli_connect($server,$username,$password,$dbname);	
 			if(!$conn) {
@@ -29,8 +29,8 @@
 				while($row=mysqli_fetch_assoc($data)) {
 		?>
 					<tr>
-						<td><?php echo $row['id'];?></td>
-						<td><?php echo $row['email_id'];?></td>
+						<td><?php echo $row['ID'];?></td>
+						<td><?php echo $row['email'];?></td>
 					</tr>
 		<?php			
 				}
