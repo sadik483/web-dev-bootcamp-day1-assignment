@@ -2,7 +2,7 @@
 		$email=$_POST['emailid'];
 
 	$server="localhost:3306";
-	$dbname="web-dev";
+	$dbname="mysql";
 	$username="root";
 	$password="";
 
@@ -18,14 +18,7 @@
 	echo '<br/>';
 	if($sFlag==1) {
 
-		// Step-4a: Create SQL Injection according to the database
-		// create an SQL Injection to insert data into the table
-		$sql="INSERT INTO email_form (email_id) VALUES('".$emailid."');";
-
-		//echo $sql;
-
-		// Step-4b: Query the Server through injection
-		// query the database server
+		$sql="INSERT INTO email_form(email)VALUES('".$email."');";
 		$a=mysqli_query($conn,$sql);
 
 		if($a) {
